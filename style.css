@@ -1,0 +1,204 @@
+
+/*#######################################################################################*/
+/*Esse bloco é responsável por customizar as confiugações do título da Página*/
+/*#######################################################################################*/
+
+h1 {
+    color: #0c4fdf;
+    text-align: center;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
+/*#######################################################################################*/
+/*Esse bloco é responsável pela formatação da página atribuindo a cor de fundo, por exemplo*/
+/*#######################################################################################*/
+body {
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+width: 80%;
+margin: auto;
+background-color:rgb(5, 191, 248);
+}
+ 
+/*#######################################################################################*/
+/*Esse bloco é responsável por organizar minha Lista na Horizontal*/
+/*#######################################################################################*/
+
+.Tickers{
+     text-align: center; /*Centraliza os botões*/
+    display: flex; /*Coloca os botôes na horizontal*/
+    gap:5px
+}
+ 
+/*####################################################################################### 
+ Esse bloco é responsável por alterar o formato dos botões e pela coloração 
+ #######################################################################################*/
+.Tickers a{
+    background-color: rgb(0, 238, 255);
+    display: block;
+    padding: 10px;         /* padding garante o espaçamento*/
+    border-radius:50px;    /* border-radius dá o formato arredondado para os botões com as letras*/
+
+}
+
+/*#######################################################################################*/
+/*Esse bloco é responsável por alterar a cor quando movemos o cursor sobre os botões*/
+/*#######################################################################################*/
+.Tickers a:hover{
+    background-color: blue;
+   color: white;
+   transform: scale(1.2)
+}
+
+
+/*#######################################################################################*/
+/*Esse bloco é responsável por organizar os ícones das empresas dentro de cada página.
+/*#######################################################################################*/
+
+img{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-radius: 7px;
+ }
+
+ /*#######################################################################################*/
+/*Esse bloco é responsável por formatar o nome de cada empresa.
+/*#######################################################################################*/
+.Tickers li{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    font-size: x-large; 
+    text-decoration: none;
+    list-style-type:none;
+}
+ 
+/*#######################################################################################*/
+/*Esse bloco controla o menu de navegação
+/*#######################################################################################*/
+  
+  .DayTrade ul{
+    padding: 4%; /* aumenta o distanciamento entre o menu e o grafico*/
+    background-color: rgb(7, 86, 100); /* controla a dor de fundo da barra*/
+    width: 92%;  /* controla o tamanho da faixa horizontalmente*/
+  }
+  .DayTrade li{
+    display: block; /* Faz desaparecer os pingos antes dos menus */
+    text-align: center; /* Organiza os menus ao centro */
+     width: 20%; /*Controla o espaçamento*/
+    float: left;  /* distribui o menu horizontalmente*/
+    padding: 3px;
+  }
+  .DayTrade a{
+    color: white;
+    text-transform: uppercase; /* Transforma todas as letras em maiusculas*/
+    text-decoration: none; /* Remove o underline*/
+ /* Esse bloco controla  a mudança de cor ao passar o mouse sobre o menu*/
+  }
+  .DayTrade li :hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.2)
+  }
+
+/*#######################################################################################*/
+/*Esse bloco as informações de Contato
+/*#######################################################################################*/
+   
+ section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #0678e4;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+section h2{
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+form label{
+    color: #f5f5f5;
+    font-size: 17px; /* ajusta o tamanho das letras dentro do form*/
+    margin-bottom: 20px;
+}
+form input{
+    padding: 5px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
+}
+
+/*Página do Obrigado*/
+
+.main{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: #101026;
+   flex-direction: column;
+}
+.text{
+    font-size: 45px;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+}
+.paragrafo{
+    color: #f5f5f5;
+    margin-bottom: 50px;
+}
+.btn{
+    padding: 5px 50px;
+    background: #f5f5f5;
+    text-decoration: none;
+    color: #101026;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.btn:hover{
+    border-radius: 16px;
+}
